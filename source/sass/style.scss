@@ -1,1 +1,9 @@
-// Начните писать стили здесь
+// normalize.css
+@import "global/_normalize";
+
+// общие стили
+@import "global/_variables";
+@import "global/_mixin";
+@import "global/_fonts";
+@import "global/_global";
+@import "blocks/_visually-hidden";

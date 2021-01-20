@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Подбор программы</h1>
+      <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <form action="">
+        <div>
+          <b class="visually-hidden">Описание кота</b>
+          <div>
+            <label for="name">Имя:*</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div>
+            <label for="weight">Вес (кг):*</label>
+            <input type="text" name="weight" id="weight" />
+          </div>
+          <div>
+            <label for="age">Возраст (лет):</label>
+            <input type="text" name="age" id="age" />
+          </div>
+        </div>
+        <div>
+          <div>
+            <label
+              ><input type="radio" name="target" value="loss" checked />
+              Похудение</label
+            >
+          </div>
+          <div>
+            <label
+              ><input type="radio" name="target" value="gain" /> Набор
+              массы</label
+            >
+          </div>
+          <div>
+            <label
+              ><input type="radio" name="target" value="indefined" /> Не знаю
+              (нужен ваш совет)</label
+            >
+          </div>
+        </div>
+        <div>
+          <b>Контактные данные (владельца кота)</b>
+          <div>
+            <label for="email">E-mail:*</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div>
+            <label for="tel">Телефон:*</label>
+            <input type="tel" name="tel" id="tel" />
+          </div>
+        </div>
+        <div>
+          <b>Комментарий</b>
+          <textarea
+            name="comment"
+            id="comment"
+            value="Расскажите обо всех повадках кота"
+          ></textarea>
+        </div>
+        <div>
+          <b>Дополнительно</b>
+          <div>
+            <div>
+              <input type="checkbox" name="sweetener" id="sweetener" checked />
+              <label for="sweetener">Сахарозаменитель</label>
+            </div>
+            <div>
+              <input type="checkbox" name="water" id="water" />
+              <label for="water">Питьевая вода</label>
+            </div>
+            <div>
+              <input type="checkbox" name="milk" id="milk" />
+              <label for="milk">Молоко</label>
+            </div>
+            <div>
+              <input type="checkbox" name="vitamins" id="vitamins" />
+              <label for="vitamins">Витамины</label>
+            </div>
+          </div>
+          <button>Отправить заявку</button>
+          <small>* — Обязательные поля</small>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
