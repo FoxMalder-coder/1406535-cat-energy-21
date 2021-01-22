@@ -7,3 +7,25 @@
 @import "global/_fonts";
 @import "global/_global";
 @import "blocks/_visually-hidden";
+@import "blocks/button";
+@import "blocks/container";
+@import "blocks/page-title";
+@import "blocks/separator";
+
+
+@import "blocks/features";
+@import "blocks/target";
+
+// главная
+@import "blocks/page-body";
+// @import "blocks/main-nav";
+@import "blocks/page-header";
+
+// каталог
+@import "blocks/catalog";
+@import "blocks/product";
+@import "blocks/table";
+@import "blocks/show-all";
+@import "blocks/extra";
+@import "blocks/table-small";
+@import "blocks/banner";

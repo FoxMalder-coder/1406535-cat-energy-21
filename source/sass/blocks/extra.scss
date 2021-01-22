@@ -1,0 +1,36 @@
+// .extra {
+// }
+
+.extra__title {
+  position: relative;
+  top: -24px;
+  left: -20px;
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 0 20px;
+
+  font-family: "Oswald", "Verdana", sans-serif;
+
+  @include text(24px, 24px, 400, $black);
+  white-space: nowrap;
+
+  background-color: $white;
+
+  @media (min-width: $width-mobile-only) {
+    left: 0;
+    margin-bottom: 56px;
+    padding: 0 36px;
+  }
+
+  @media (min-width: $width-desktop) {
+    left: -36px;
+  }
+}
+
+.extra__list {
+  @include list-reset;
+}
+
+// .extra__item {}
+// .extra__info {
+// }

@@ -1,0 +1,29 @@
+.table {
+  width: 100%;
+
+  @include text(12px, 16px, 400, $gray-68);
+
+  @media (min-width: $width-mobile-only) {
+    font-size: 16px;
+  }
+}
+
+.table__row {
+  @media (min-width: $width-mobile-only) {
+    border-bottom: 1px solid $gray-205;
+  }
+}
+
+.table__row td {
+  padding: 2px 0;
+
+  @media (min-width: $width-mobile-only) {
+    padding: 8px 0;
+  }
+}
+
+// .table__column1 {}
+
+.table__column2 {
+  text-align: right;
+}

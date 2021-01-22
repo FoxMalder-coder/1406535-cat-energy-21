@@ -1,0 +1,16 @@
+.page-title {
+  margin: 0;
+
+  font-family: "Oswald", "Verdana", sans-serif;
+
+  @include text(36px, 36px, 400, $black);
+
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.page-title--reversed {
+  color: $white;
+}

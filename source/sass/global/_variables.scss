@@ -1,21 +1,23 @@
 // Цвета
 $white: #ffffff;
 $gray-242: #f2f2f2;
-$gray-229: #e5e5e5;
-$gray-213: #d5d5d5;
-$gray-51: #333333;
+$gray-235: #ebebeb;
+// $gray-231: #E7E7E7; замена на 235
+// $gray-230: #e6e6e6; замена на 235
+// $gray-217: #D9D9D9; замена на 205
+$gray-205: #cdcdcd;
+$gray-186: #bababa;
+$gray-102: #666666; //Цвета иконок
+$gray-68: #444444;
+// $gray-34: #222222; замена на черный
 $black: #000000;
 
-$gray-blue: #5c6870;
+$green: #68b738;
+$dark-green: #5eaa2f;
 
-$light-blue: #81b3d2;
-$blue: #669ec0;
-$dark-blue: #5496bd;
-
-$light-brown: #766357;
-$dark-brown: #604e43;
+$status-error: #ff8282;
 
 // Брейк-поинты
 $width-mobile-only: 480px;
 $width-tablet: 768px;
-$width-desktop: 1200px;
+$width-desktop: 1300px;

@@ -1,0 +1,115 @@
+.product {
+  margin-bottom: 40px;
+
+  @media (min-width: $width-mobile-only) {
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 100px;
+  }
+}
+
+.product__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: calc(100% + 40px);
+  margin: 0 -20px;
+
+  @media (min-width: $width-mobile-only) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 -30px;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: calc(100% + 60px);
+  }
+}
+
+.product__item {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "image name"
+    "image table"
+    "button button";
+  grid-template-columns: 1fr 142px;
+  padding: 20px 20px 25px;
+  row-gap: 14px;
+  border-top: 1px solid $gray-235;
+
+  @media (min-width: $width-mobile-only) {
+    flex-basis: 245px;
+    flex-shrink: 0;
+    flex-grow: 1;
+
+    grid-template-areas:
+      "image"
+      "name"
+      "table"
+      "button";
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px repeat(3, min-content);
+    row-gap: 32px;
+
+    margin: 140px 30px 0;
+    padding: 40px 38px;
+
+    background-color: $gray-242;
+    border: 0;
+  }
+}
+
+.product__img {
+  grid-area: image;
+  justify-self: center;
+  align-self: end;
+}
+
+.product__name {
+  grid-area: name;
+  width: 80px;
+  margin: 0;
+
+  font-family: "Oswald", "Verdana", sans-serif;
+
+  @include text(16px, 20px, 400, $black);
+  text-transform: uppercase;
+
+  @media (min-width: $width-mobile-only) {
+    justify-self: center;
+    width: 145px;
+
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+.product__info {
+  grid-area: table;
+}
+
+.product__button {
+  grid-area: button;
+}
+
+.product__item--show-all {
+  padding: 25px 20px;
+
+  border-top: 1px solid $gray-235;
+  border-bottom: 1px solid $gray-235;
+
+  @media (min-width: $width-mobile-only) {
+    flex-basis: 245px;
+    flex-shrink: 0;
+    flex-grow: 1;
+
+    margin: 140px 30px 0;
+    padding: 40px 38px;
+    border: 2px solid $gray-242;
+  }
+}

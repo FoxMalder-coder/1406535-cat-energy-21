@@ -1,0 +1,141 @@
+// .main-nav {
+//   display: grid;
+//   grid-template-columns: 35px 1fr 35px;
+//   align-items: center;
+//   padding: 12px 0;
+//   min-height: 42px;
+
+//   @media (min-width: $width-mobile-only) {
+//     grid-template-columns: 1fr;
+//     min-height: 100px;
+//   }
+
+//   @media (min-width: $width-tablet) {
+//     grid-template-columns: min-content 1fr;
+//     column-gap: 40px;
+//   }
+
+//   @media (min-width: $width-desktop) {
+//     min-height: 145px;
+//   }
+// }
+
+.main-nav__logo {
+  text-align: left;
+
+  @media (min-width: $width-mobile-only) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 202px;
+    height: 59px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-nav__logo-mobile-only {
+  text-align: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $width-mobile-only) {
+    display: none;
+  }
+}
+
+// .main-nav__wrapper {
+//   //
+// }
+
+.main-nav__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+
+
+
+  // align-items: center;
+
+
+  // @media (min-width: $width-mobile-only) {
+  //   justify-content: space-between;
+  //   margin: 0 -10px;
+  //   width: 440px;
+  // }
+
+  // @media (min-width: $width-desktop) {
+  //   width: 480px;
+  // }
+}
+
+.main-nav__item {
+  // width: 100%;
+  // min-height: 66px;
+  // text-align: center;
+  border-top: 1px solid $gray-235;
+  // outline: 1px solid red;
+
+  &:last-child {
+    border-bottom: 1px solid $gray-235;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  width: auto;
+  padding: 22px 0 24px;
+  text-align: center;
+
+  @include text(20px, 20px, 500, red);
+
+  font-family: "Oswald", "Verdana", sans-serif;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $width-mobile-only) {
+    @include text(18px, 24px, 400, $black);
+  }
+}
+
+.main-nav__link--reversed {
+  @media (min-width: $width-desktop) {
+    color: $white;
+  }
+}
+
+.main-nav__link--active {
+  @media (min-width: $width-mobile-only) {
+    border-bottom: 2px solid $green;
+  }
+
+  &.main-nav__link--reversed {
+    @media (min-width: $width-desktop) {
+      border-color: $white;
+    }
+  }
+}
