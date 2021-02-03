@@ -76,7 +76,7 @@ const sprite = () => {
     .pipe(imagemin([
       imagemin.svgo({
         plugins: [{
-          removeViewBox: false
+          removeViewBox: false,
         }]
       })
     ]))
