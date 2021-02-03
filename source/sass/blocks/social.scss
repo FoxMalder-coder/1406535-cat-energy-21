@@ -1,0 +1,68 @@
+.social__list {
+  @include list-reset;
+  display: flex;
+  width: auto;
+  margin: -7px;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 22px;
+  margin: 7px;
+
+  @media (min-width: $width-tablet) {
+    height: 34px;
+  }
+}
+
+.social__icon {
+  width: 25px;
+  height: 25px;
+  background-color: $gray-102;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  &:hover,
+  &:focus {
+    background-color: $green;
+  }
+
+  &:active {
+    background-color: rgba($green, 0.3);
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.social__icon--vk {
+  mask-image: url("../img/icon-vk.svg");
+  mask-size: 23px 16px;
+
+  @media (min-width: $width-tablet) {
+    mask-size: 30px 22px;
+  }
+}
+
+.social__icon--instagram {
+  mask-image: url("../img/icon-instagram.svg");
+  mask-size: 16px 16px;
+
+  @media (min-width: $width-tablet) {
+    mask-size: 23px 23px;
+  }
+}
+
+.social__icon--facebook {
+  mask-image: url("../img/icon-facebook.svg");
+  mask-size: 13px 20px;
+
+  @media (min-width: $width-tablet) {
+    mask-size: 15px 30px;
+  }
+}

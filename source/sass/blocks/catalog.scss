@@ -5,7 +5,12 @@
   margin-bottom: 40px;
 
   @media (min-width: $width-tablet) {
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 36px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $width-tablet) {
+    margin-top: 68px;
+    margin-bottom: 25px;
   }
 }

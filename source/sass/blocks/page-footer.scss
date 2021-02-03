@@ -1,0 +1,63 @@
+.page-footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: $gray-242;
+
+  @media (min-width: $width-tablet) {
+    padding: 56px 0;
+  }
+}
+
+.page-footer__grid {
+  display: grid;
+  grid-template-areas:
+    "f-logo"
+    "social"
+    "copyright";
+  row-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  background-color: $gray-242;
+
+  @media (min-width: $width-tablet) {
+    grid-template-areas: "f-logo social copyright";
+    grid-template-columns: 1fr min-content 1fr;
+  }
+}
+
+.page-footer__logo {
+  grid-area: f-logo;
+  padding: 20px 0 10px;
+
+  @media (min-width: $width-tablet) {
+    justify-self: start;
+    padding: 0;
+  }
+}
+
+.page-footer__social {
+  grid-area: social;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding: 20px 0;
+  border-top: 1px solid $gray-205;
+  border-bottom: 1px solid $gray-205;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+}
+
+.page-footer__copyright {
+  grid-area: copyright;
+  width: 100%;
+
+  @media (min-width: $width-tablet) {
+    justify-self: end;
+    width: 163px;
+  }
+}

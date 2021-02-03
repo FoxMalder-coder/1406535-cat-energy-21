@@ -13,14 +13,20 @@
 @import "blocks/separator";
 @import "blocks/break";
 
-
-@import "blocks/features";
-@import "blocks/target";
-
 // главная
 @import "blocks/page-body";
-// @import "blocks/main-nav";
+@import "blocks/main-nav";
 @import "blocks/page-header";
+@import "blocks/intro";
+@import "blocks/features";
+@import "blocks/target";
+@import "blocks/example";
+@import "blocks/definition";
+@import "blocks/cat-picture";
+@import "blocks/map";
+@import "blocks/page-footer";
+@import "blocks/copyright";
+@import "blocks/social";
 
 // каталог
 @import "blocks/catalog";
@@ -28,7 +34,6 @@
 @import "blocks/table";
 @import "blocks/show-all";
 @import "blocks/extra";
-@import "blocks/banner";
 
 // форма
 @import "blocks/form";

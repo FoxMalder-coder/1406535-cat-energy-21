@@ -1,23 +1,37 @@
 // .features {
 // }
 
-// .features__title {
-// }
+.features__title {
+  margin: 25px 0 40px;
+  font-family: "Oswald", "Verdana", sans-serif;
+
+  @include text(36px, 40px, 400, $black);
+
+  @media (min-width: $width-tablet) {
+    margin: 45px 0 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
 
 .features__list {
   @include list-reset;
   counter-reset: num;
   display: grid;
   row-gap: 20px;
+  padding-bottom: 42px;
 
   @media (min-width: $width-mobile-only) {
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
     row-gap: 37px;
+    padding-bottom: 48px;
   }
 
   @media (min-width: $width-desktop) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 74px;
+    padding-bottom: 10px;
   }
 }
 

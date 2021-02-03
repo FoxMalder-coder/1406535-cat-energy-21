@@ -15,8 +15,6 @@
 }
 
 .table__row td {
-  padding: 2px 0;
-
   @media (min-width: $width-mobile-only) {
     padding: 8px 0;
   }

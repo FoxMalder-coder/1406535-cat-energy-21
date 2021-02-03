@@ -1,5 +1,5 @@
 .extra {
-  padding-bottom: 34px;
+  padding-bottom: 36px;
 
   @media (min-width: $width-tablet) {
     padding-bottom: 76px;
@@ -23,10 +23,10 @@
 
 .extra__title {
   position: relative;
-  top: -24px;
+  top: -16px;
   left: -20px;
   display: inline-block;
-  margin: 0 0 12px;
+  margin: 0 0 19px;
   padding: 0 20px;
 
   font-family: "Oswald", "Verdana", sans-serif;
@@ -37,7 +37,7 @@
   background-color: $white;
 
   @media (min-width: $width-mobile-only) {
-    top: -30px;
+    top: -24px;
     left: 0;
     margin-bottom: 56px;
     padding: 0 36px;
@@ -60,7 +60,7 @@
 }
 
 .extra__item {
-  padding: 14px 0 18px;
+  padding: 13px 0 17px;
   border-top: 1px solid $gray-205;
 
   &:last-child {
@@ -89,7 +89,7 @@
   grid-template-areas:
     "name name"
     "pack price";
-  row-gap: 14px;
+  row-gap: 11px;
   margin-bottom: 14px;
 
   @media (min-width: $width-mobile-only) {
@@ -99,6 +99,7 @@
 
   @media (min-width: $width-tablet) {
     grid-template-columns: 1fr min-content 94px;
+    margin-bottom: 20.5px;
   }
 
   @media (min-width: $width-desktop) {
@@ -160,7 +161,7 @@
   width: 100%;
   max-width: 895px;
   margin-top: 38px;
-  padding: 62px 0 42px;
+  padding: 62px 0 45px;
 
   background-image: url("../img/background-banner-mobile.jpg");
   background-repeat: no-repeat;
@@ -175,12 +176,9 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 68px;
-    padding: 64px 90px 74px;
+    padding: 70px 90px 70px;
 
     background-image: url("../img/background-banner-tablet.jpg");
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-banner-tablet@2x.jpg");
@@ -194,9 +192,6 @@
     padding: 62px 0 42px;
 
     background-image: url("../img/background-banner-desktop.jpg");
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-banner-desktop@2x.jpg");
@@ -209,7 +204,7 @@
   margin-bottom: 60px;
 
   @media (min-width: $width-mobile-only) {
-    margin-bottom: 0;
+    margin: -10px 0 0;
   }
 
   @media (min-width: $width-desktop) {
@@ -228,7 +223,7 @@
   }
 
   @media (min-width: $width-tablet) {
-    width: 200px;
+    width: 195px;
   }
 
   @media (min-width: $width-desktop) {

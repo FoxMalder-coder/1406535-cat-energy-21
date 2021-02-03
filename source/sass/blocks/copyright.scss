@@ -1,0 +1,30 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 34px;
+}
+
+.copyright__text {
+  @include text(16px, 18px, 400, $gray-68);
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link {
+  width: 28px;
+  height: 35px;
+  background-color: $gray-102;
+  mask-image: url("../img/logotype-htmlacademy.svg");
+
+  &:hover,
+  &:focus {
+    background-color: $green;
+  }
+
+  &:active {
+    background-color: rgba($green, 0.3);
+  }
+}
