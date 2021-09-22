@@ -1,16 +1,4 @@
-// // .form {}
-
-.form .container {
-  @media (min-width: $width-tablet) {
-    margin-right: 70px;
-    margin-left: 70px;
-  }
-
-  @media (min-width: $width-desktop) {
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
+// .form {}
 
 .form__title {
   margin-top: 26px;
@@ -152,6 +140,7 @@ form textarea {
   border: 0;
   outline: 1px solid $gray-205;
   outline-offset: -1px;
+  cursor: pointer;
 
   font-family: "Oswald", "Verdana", sans-serif;
 
@@ -212,6 +201,7 @@ form textarea {
   margin-top: 8px;
   padding: 10px 14px;
   resize: none;
+  cursor: pointer;
 
   @media (min-width: $width-tablet) {
     height: 174px;
@@ -241,6 +231,8 @@ form textarea {
   outline: none;
   padding: 5.5px 0 5.5px 45px;
   color: $black;
+  cursor: pointer;
+  user-select: none;
 
   &::before {
     position: absolute;

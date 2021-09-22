@@ -1,13 +1,13 @@
 .page-header {
   @media (min-width: $width-desktop) {
     background:
-      linear-gradient(to left, rgba($green, 0.85), rgba($green, 0.85) 49.5vw, $white 49.5vw),
-      url("../img/background-desktop.jpg") 48.5vw top / contain no-repeat;
+      linear-gradient(to right, $white, $white 50vw, rgba($green, 0.85) 50vw),
+      url("../img/background-desktop.jpg") 50vw top / contain no-repeat;
 
     @media (min-resolution: 2dppx) {
       background:
-        linear-gradient(to left, rgba($green, 0.85), rgba($green, 0.85) 49.5vw, $white 49.5vw),
-        url("../img/background-desktop@2x.jpg") 48.5vw top / contain no-repeat;
+        linear-gradient(to right, $white, $white 50vw, rgba($green, 0.85) 50vw),
+        url("../img/background-desktop@2x.jpg") 50vw top / contain no-repeat;
     }
   }
 }

@@ -1,3 +1,4 @@
+/* stylelint-disable */
 .social__list {
   @include list-reset;
   display: flex;
@@ -22,8 +23,6 @@
   width: 25px;
   height: 25px;
   background-color: $gray-102;
-  mask-position: center;
-  mask-repeat: no-repeat;
 
   &:hover,
   &:focus {
@@ -41,28 +40,28 @@
 }
 
 .social__icon--vk {
-  mask-image: url("../img/icon-vk.svg");
-  mask-size: 23px 16px;
+  mask: url("../img/icon-vk.svg") center / 23px 16px no-repeat;
+  -webkit-mask: url("../img/icon-vk.svg") center / 23px 16px no-repeat;
 
   @media (min-width: $width-tablet) {
-    mask-size: 30px 22px;
+    -webkit-mask-size: 30px 22px;
   }
 }
 
 .social__icon--instagram {
-  mask-image: url("../img/icon-instagram.svg");
-  mask-size: 16px 16px;
+  mask: url("../img/icon-instagram.svg") center / 16px 16px no-repeat;
+  -webkit-mask: url("../img/icon-instagram.svg") center / 16px 16px no-repeat;
 
   @media (min-width: $width-tablet) {
-    mask-size: 23px 23px;
+    -webkit-mask-size: 23px 23px;
   }
 }
 
 .social__icon--facebook {
-  mask-image: url("../img/icon-facebook.svg");
-  mask-size: 13px 20px;
+  mask: url("../img/icon-facebook.svg") center / 13px 20px no-repeat;
+  -webkit-mask: url("../img/icon-facebook.svg") center / 13px 20px no-repeat;
 
   @media (min-width: $width-tablet) {
-    mask-size: 15px 30px;
+    -webkit-mask-size: 15px 30px;
   }
 }

@@ -12,7 +12,7 @@
   <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -83,20 +83,24 @@
     </div>
 
     <div class="intro">
-      <h1 class="page-title intro__title">Функциональное питание для&nbsp;котов</h1>
-      <span class="intro__slogan">Занялся собой? Займись котом!</span>
-      <div class="intro__img">
-        <picture>
-          <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop.webp 1x, img/index-can-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 480px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
-          <source media="(min-width: 1300px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
-          <source media="(min-width: 480px)" srcset="img/index-can-tablet.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-          <img src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270"
+      <div class="container">
+        <div class="intro__grid">
+          <h1 class="page-title intro__title">Функциональное питание для&nbsp;котов</h1>
+          <span class="intro__slogan">Занялся собой? Займись котом!</span>
+          <div class="intro__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop.webp 1x, img/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 480px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 480px)" srcset="img/index-can-tablet.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+              <img src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270"
             alt="Банка с питанием CAT Energy PRO курица 500 г">
-        </picture>
+            </picture>
+          </div>
+          <a href="form.html" class="button button--green button--big intro__button">Подобрать программу</a>
+        </div>
       </div>
-      <a href="form.html" class="button button--green button--big intro__button">Подобрать программу</a>
     </div>
   </header>
 
@@ -178,47 +182,50 @@
 
     <section class="example">
       <div class="container">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">
+        <div class="example__grid">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
           Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
           этом он не менял своих привычек и по-прежнему спит по 16 часов в
-          день.
-        </p>
-        <dl class="example__info definition">
-          <div class="definition__pairs">
-            <dt class="definition__name">Cнижение веса</dt>
-            <dd class="definition__value">5 кг</dd>
+          день.</p>
+          <dl class="example__info definition">
+            <div class="definition__pairs">
+              <dt class="definition__name">Cнижение веса</dt>
+              <dd class="definition__value">5 кг</dd>
+            </div>
+            <div class="definition__pairs">
+              <dt class="definition__name">Затрачено времени</dt>
+              <dd class="definition__value">60 дней</dd>
+            </div>
+            <div class="definition__pairs-no-border">
+              <dt class="definition__name-small">Затраты на питание:</dt>
+              <dd class="definition__value-small">15 000 руб.</dd>
+            </div>
+          </dl>
+          <div class="example__img cat-picture">
+            <span class="cat-picture__caption cat-picture__caption--before">Было</span>
+            <input id="picture-toggle" class="cat-picture__input" type="checkbox" name="picture-toggle">
+            <label class="cat-picture__toggle" for="picture-toggle" tabindex="0"></label>
+            <div class="cat-picture__image"></div>
+            <span class="cat-picture__caption cat-picture__caption--after">Стало</span>
           </div>
-          <div class="definition__pairs">
-            <dt class="definition__name">Затрачено времени</dt>
-            <dd class="definition__value">60 дней</dd>
-          </div>
-          <div class="definition__pairs-no-border">
-            <dt class="definition__name-small">Затраты на питание:</dt>
-            <dd class="definition__value-small">15 000 руб.</dd>
-          </div>
-        </dl>
-        <div class="example__img cat-picture">
-          <span class="cat-picture__caption cat-picture__caption--before">Было</span>
-          <input id="picture-toggle" class="cat-picture__input" type="checkbox" name="picture-toggle">
-          <label class="cat-picture__toggle" for="picture-toggle" tabindex="0"></label>
-          <div class="cat-picture__image"></div>
-          <span class="cat-picture__caption cat-picture__caption--after">Стало</span>
         </div>
       </div>
     </section>
 
     <div class="map">
-      <div class="map__info map__info--reversed">
-        <b class="map__slogan">Приглашаем<br>
-          к&nbsp;сотрудничеству<br>
-          дилеров!</b>
-        <address class="map__place">
-          ул. Большая<br>
-          Конюшенная, д.&nbsp;19/8<br>
-          <span class="map__city">Санкт-Петербург</span>
-        </address>
+      <div class="container">
+        <div class="map__info map__info--reversed">
+          <b class="map__slogan">Приглашаем<br>
+            к&nbsp;сотрудничеству<br>
+            дилеров!</b>
+          <address class="map__place">
+            ул. Большая<br>
+            Конюшенная, д.&nbsp;19/8<br>
+            <span class="map__city">Санкт-Петербург</span>
+          </address>
+        </div>
       </div>
       <iframe class="map__yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3A9b4b19ce3287a75d6c9437e38d5e97ab59db70893945e51296413ee4d5225df4&amp;source=constructor" width="320" height="400" loading="lazy" aria-hidden="false" tabindex="0" title="Штаб-квартира CAT Energy"></iframe>
     </div>

@@ -1,14 +1,16 @@
-.intro {
+.intro__grid {
   display: grid;
+  width: calc(100% + 40px);
+  margin: 0 -20px;
   padding: 28px 20px 0;
 
   background:
-    linear-gradient(to bottom, rgba($green, 0.85), rgba($green, 0.85) 300px, $white 300px),
+    linear-gradient(to bottom, rgba($green, 0.85), rgba($green, 0.85) 300px, $white 300px, $white),
     url("../img/background-mobile.jpg") top center / auto 300px no-repeat;
 
   @media (min-resolution: 2dppx) {
     background:
-      linear-gradient(to bottom, rgba($green, 0.85), rgba($green, 0.85) 300px, $white 300px),
+      linear-gradient(to bottom, rgba($green, 0.85), rgba($green, 0.85) 300px, $white 300px, $white),
       url("../img/background-mobile@2x.jpg") top center / auto 300px no-repeat;
 
     @media (min-width: $width-mobile-only) {
@@ -29,6 +31,8 @@
   }
 
   @media (min-width: $width-tablet) {
+    width: calc(100% + 60px);
+    margin: 0 -30px;
     grid-template-rows:
       min-content
       min-content
@@ -39,6 +43,8 @@
   }
 
   @media (min-width: $width-desktop) {
+    margin-right: 0;
+    margin-left: 0;
     grid-template-rows:
       80px
       min-content
@@ -46,7 +52,7 @@
       54px
       min-content;
     grid-template-columns: 244px 190px 1fr;
-    padding: 22px 0 54px 190px;
+    padding: 22px 0 54px 100px;
   }
 }
 

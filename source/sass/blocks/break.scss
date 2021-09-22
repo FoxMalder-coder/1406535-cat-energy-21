@@ -3,3 +3,17 @@
     display: none;
   }
 }
+
+.break-mobile-only {
+  display: block;
+
+  @media (min-width: $width-mobile-only) {
+    display: inline;
+  }
+}
+
+.break-non-mobile {
+  @media (min-width: $width-mobile-only) {
+    display: block;
+  }
+}
