@@ -201,11 +201,20 @@
               <dd class="definition__value-small">15 000 руб.</dd>
             </div>
           </dl>
-          <div class="example__img cat-picture">
+
+          <!-- <div class="example__img cat-picture">
             <span class="cat-picture__caption cat-picture__caption--before">Было</span>
             <input id="picture-toggle" class="cat-picture__input" type="checkbox" name="picture-toggle">
             <label class="cat-picture__toggle" for="picture-toggle" tabindex="0"></label>
             <div class="cat-picture__image"></div>
+            <span class="cat-picture__caption cat-picture__caption--after">Стало</span>
+          </div> -->
+
+          <div class="example__img cat-picture">
+            <span class="cat-picture__caption cat-picture__caption--before">Было</span>
+            <img src="img/cat-skinny@2x.png" alt="-" class="cat-picture-after">
+            <input id="picture-toggle" class="cat-picture__input" type="range" name="picture-toggle" value="5" min="0" max="10">
+            <img src="img/cat-fat@2x.png" alt="-" class="cat-picture-before">
             <span class="cat-picture__caption cat-picture__caption--after">Стало</span>
           </div>
         </div>
